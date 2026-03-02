@@ -1,0 +1,30 @@
+{
+  "name": "quickhire-job-board-server",
+  "version": "1.0.0",
+  "description": "QuickHire job board backend API",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "seed": "node scripts/seed.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "mongoose": "^8.19.3",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "keywords": [
+    "quickhire",
+    "job-board",
+    "express",
+    "mongodb"
+  ],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs"
+}

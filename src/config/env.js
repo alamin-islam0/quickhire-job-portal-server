@@ -7,7 +7,8 @@ const envSchema = z.object({
   NODE_ENV: z.enum(['development', 'test', 'production']).default('development'),
   PORT: z.coerce.number().default(5000),
   MONGODB_URI: z.string().min(1, 'MONGODB_URI is required'),
-  ADMIN_TOKEN: z.string().min(1, 'ADMIN_TOKEN is required'),
+  // Keep public APIs usable even if admin token is not configured yet.
+  ADMIN_TOKEN: z.string().default(''),
 });
 
 const parsed = envSchema.safeParse(process.env);

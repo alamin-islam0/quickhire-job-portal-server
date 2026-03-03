@@ -22,7 +22,7 @@ Backend API for the QuickHire job portal.
    - `cp .env.example .env`
 4. Set env values in `.env`:
    - `PORT=5000`
-   - `MONGODB_URI=mongodb+srv://QuickShare_User:aZkxUzwjScqCP3Ci@mypanel.2nu9rfb.mongodb.net/quickshare_data?appName=MyPanel`
+   - `MONGODB_URI=mongodb+srv://USER-NAME:PASSWORD@mypanel.2nu9rfb.mongodb.net/quickshare_data?appName=MyPanel`
    - `ADMIN_TOKEN=quickhire_admin_2026_secure`
 5. Run server:
    - `npm run dev`
